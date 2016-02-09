@@ -1,0 +1,236 @@
+[2016-01-09T18:37:34+00:00] INFO: AWS OpsWorks instance , Agent version 4005-20151217192343
+[2016-01-09T18:37:35+00:00] INFO: Started chef-zero at chefzero://localhost:8889 with repository at /opt/aws/opsworks/current
+  One version per cookbook
+  data_bags at /var/lib/aws/opsworks/data.internal/data_bags
+  nodes at /var/lib/aws/opsworks/data.internal/nodes
+
+[2016-01-09T18:37:35+00:00] INFO: Forking chef instance to converge...
+[2016-01-09T18:37:35+00:00] INFO: *** Chef 12.4.1 ***
+[2016-01-09T18:37:35+00:00] INFO: Chef-client pid: 7611
+[2016-01-09T18:37:35+00:00] WARN: Run List override has been provided.
+[2016-01-09T18:37:35+00:00] WARN: Original Run List: []
+[2016-01-09T18:37:35+00:00] WARN: Overridden Run List: [recipe[aws_opsworks_agent]]
+[2016-01-09T18:37:35+00:00] INFO: Run List is [recipe[aws_opsworks_agent]]
+[2016-01-09T18:37:35+00:00] INFO: Run List expands to [aws_opsworks_agent]
+[2016-01-09T18:37:35+00:00] INFO: Starting Chef Run for grokitlayer1.localdomain
+[2016-01-09T18:37:35+00:00] INFO: Running start handlers
+[2016-01-09T18:37:35+00:00] INFO: Start handlers complete.
+[2016-01-09T18:37:35+00:00] INFO: HTTP Request Returned 404 Not Found: Object not found: 
+[2016-01-09T18:37:36+00:00] INFO: Loading cookbooks [aws_opsworks_agent@0.1.0, aws_opsworks_helpers@0.1.0, aws_opsworks_agent_version@1.0.0, aws_opsworks_ebs@2.0.0, aws_opsworks_users@1.0.0, aws_opsworks_system@0.1.0, aws_opsworks_custom_cookbooks@1.0.0, aws_opsworks_custom_run@0.1.0, aws_opsworks_ecs@1.0.0, s3_file@2.5.4]
+[2016-01-09T18:37:36+00:00] INFO: Skipping removal of obsoleted cookbooks from the cache
+[2016-01-09T18:37:36+00:00] INFO: Cleaning up 2 from /var/lib/aws/opsworks/chef/
+[2016-01-09T18:37:36+00:00] INFO: Processing template[/etc/hosts] action create (aws_opsworks_system::hosts line 1)
+[2016-01-09T18:37:36+00:00] INFO: Processing template[/etc/motd.opsworks-static] action create (aws_opsworks_system::motd line 1)
+[2016-01-09T18:37:36+00:00] INFO: Processing file[/var/lib/aws/opsworks/chef/2016-01-09-17-09-48-01.json] action delete (aws_opsworks_system::cleanup line 24)
+[2016-01-09T18:37:36+00:00] INFO: file[/var/lib/aws/opsworks/chef/2016-01-09-17-09-48-01.json] deleted file at /var/lib/aws/opsworks/chef/2016-01-09-17-09-48-01.json
+[2016-01-09T18:37:36+00:00] INFO: Processing file[/var/lib/aws/opsworks/chef/2016-01-09-17-09-48-01.log] action delete (aws_opsworks_system::cleanup line 24)
+[2016-01-09T18:37:36+00:00] INFO: file[/var/lib/aws/opsworks/chef/2016-01-09-17-09-48-01.log] deleted file at /var/lib/aws/opsworks/chef/2016-01-09-17-09-48-01.log
+[2016-01-09T18:37:36+00:00] INFO: Processing log[Cleaning up 1 from /var/chef/runs/] action write (aws_opsworks_system::cleanup line 35)
+[2016-01-09T18:37:36+00:00] INFO: Cleaning up 1 from /var/chef/runs/
+[2016-01-09T18:37:36+00:00] INFO: Processing directory[/var/chef/runs/5603289e-6e1f-43dd-bfbc-f173ee8b8af1] action delete (aws_opsworks_system::cleanup line 38)
+[2016-01-09T18:37:36+00:00] INFO: directory[/var/chef/runs/5603289e-6e1f-43dd-bfbc-f173ee8b8af1] deleted /var/chef/runs/5603289e-6e1f-43dd-bfbc-f173ee8b8af1 recursively
+[2016-01-09T18:37:36+00:00] INFO: Processing aws_opsworks_custom_run[498010b5-5a44-4cd1-a4a8-a71c61ecc2a7] action prepare (aws_opsworks_custom_run::default line 3)
+[2016-01-09T18:37:36+00:00] INFO: Processing directory[/var/chef] action create (/var/lib/aws/opsworks/cache.internal/cookbooks/aws_opsworks_custom_run/providers/default.rb line 71)
+[2016-01-09T18:37:36+00:00] INFO: Processing directory[/var/chef/runs] action create (/var/lib/aws/opsworks/cache.internal/cookbooks/aws_opsworks_custom_run/providers/default.rb line 78)
+[2016-01-09T18:37:36+00:00] INFO: Processing directory[/var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7] action create (/var/lib/aws/opsworks/cache.internal/cookbooks/aws_opsworks_custom_run/providers/default.rb line 83)
+[2016-01-09T18:37:36+00:00] INFO: directory[/var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7] created directory /var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7
+[2016-01-09T18:37:36+00:00] INFO: Processing directory[/var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/data_bags] action create (/var/lib/aws/opsworks/cache.internal/cookbooks/aws_opsworks_custom_run/providers/default.rb line 88)
+[2016-01-09T18:37:36+00:00] INFO: directory[/var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/data_bags] created directory /var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/data_bags
+[2016-01-09T18:37:36+00:00] INFO: Processing directory[/var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/nodes] action create (/var/lib/aws/opsworks/cache.internal/cookbooks/aws_opsworks_custom_run/providers/default.rb line 93)
+[2016-01-09T18:37:36+00:00] INFO: directory[/var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/nodes] created directory /var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/nodes
+[2016-01-09T18:37:36+00:00] INFO: Processing template[/var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/client.rb] action create (/var/lib/aws/opsworks/cache.internal/cookbooks/aws_opsworks_custom_run/providers/default.rb line 102)
+[2016-01-09T18:37:36+00:00] INFO: template[/var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/client.rb] created file /var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/client.rb
+[2016-01-09T18:37:36+00:00] INFO: template[/var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/client.rb] updated file contents /var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/client.rb
+[2016-01-09T18:37:36+00:00] INFO: Processing file[/var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/attribs.json] action create (/var/lib/aws/opsworks/cache.internal/cookbooks/aws_opsworks_custom_run/providers/default.rb line 110)
+[2016-01-09T18:37:36+00:00] INFO: file[/var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/attribs.json] created file /var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/attribs.json
+[2016-01-09T18:37:36+00:00] INFO: file[/var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/attribs.json] updated file contents /var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/attribs.json
+[2016-01-09T18:37:36+00:00] INFO: Processing directory[/var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/data_bags/aws_opsworks_app] action create (/var/lib/aws/opsworks/cache.internal/cookbooks/aws_opsworks_custom_run/providers/default.rb line 120)
+[2016-01-09T18:37:36+00:00] INFO: directory[/var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/data_bags/aws_opsworks_app] created directory /var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/data_bags/aws_opsworks_app
+[2016-01-09T18:37:36+00:00] INFO: Processing directory[/var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/data_bags/aws_opsworks_instance] action create (/var/lib/aws/opsworks/cache.internal/cookbooks/aws_opsworks_custom_run/providers/default.rb line 120)
+[2016-01-09T18:37:36+00:00] INFO: directory[/var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/data_bags/aws_opsworks_instance] created directory /var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/data_bags/aws_opsworks_instance
+[2016-01-09T18:37:36+00:00] INFO: Processing file[/var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/data_bags/aws_opsworks_instance/grokitlayer1.json] action create (/var/lib/aws/opsworks/cache.internal/cookbooks/aws_opsworks_custom_run/providers/default.rb line 219)
+[2016-01-09T18:37:36+00:00] INFO: file[/var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/data_bags/aws_opsworks_instance/grokitlayer1.json] created file /var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/data_bags/aws_opsworks_instance/grokitlayer1.json
+[2016-01-09T18:37:36+00:00] INFO: file[/var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/data_bags/aws_opsworks_instance/grokitlayer1.json] updated file contents /var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/data_bags/aws_opsworks_instance/grokitlayer1.json
+[2016-01-09T18:37:36+00:00] INFO: Processing directory[/var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/data_bags/aws_opsworks_layer] action create (/var/lib/aws/opsworks/cache.internal/cookbooks/aws_opsworks_custom_run/providers/default.rb line 120)
+[2016-01-09T18:37:36+00:00] INFO: directory[/var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/data_bags/aws_opsworks_layer] created directory /var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/data_bags/aws_opsworks_layer
+[2016-01-09T18:37:36+00:00] INFO: Processing file[/var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/data_bags/aws_opsworks_layer/grokitlayer.json] action create (/var/lib/aws/opsworks/cache.internal/cookbooks/aws_opsworks_custom_run/providers/default.rb line 219)
+[2016-01-09T18:37:36+00:00] INFO: file[/var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/data_bags/aws_opsworks_layer/grokitlayer.json] created file /var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/data_bags/aws_opsworks_layer/grokitlayer.json
+[2016-01-09T18:37:36+00:00] INFO: file[/var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/data_bags/aws_opsworks_layer/grokitlayer.json] updated file contents /var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/data_bags/aws_opsworks_layer/grokitlayer.json
+[2016-01-09T18:37:36+00:00] INFO: Processing directory[/var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/data_bags/aws_opsworks_stack] action create (/var/lib/aws/opsworks/cache.internal/cookbooks/aws_opsworks_custom_run/providers/default.rb line 120)
+[2016-01-09T18:37:36+00:00] INFO: directory[/var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/data_bags/aws_opsworks_stack] created directory /var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/data_bags/aws_opsworks_stack
+[2016-01-09T18:37:36+00:00] INFO: Processing file[/var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/data_bags/aws_opsworks_stack/54112b96-731f-4d54-9412-9604ef8c8f77.json] action create (/var/lib/aws/opsworks/cache.internal/cookbooks/aws_opsworks_custom_run/providers/default.rb line 219)
+[2016-01-09T18:37:36+00:00] INFO: file[/var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/data_bags/aws_opsworks_stack/54112b96-731f-4d54-9412-9604ef8c8f77.json] created file /var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/data_bags/aws_opsworks_stack/54112b96-731f-4d54-9412-9604ef8c8f77.json
+[2016-01-09T18:37:36+00:00] INFO: file[/var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/data_bags/aws_opsworks_stack/54112b96-731f-4d54-9412-9604ef8c8f77.json] updated file contents /var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/data_bags/aws_opsworks_stack/54112b96-731f-4d54-9412-9604ef8c8f77.json
+[2016-01-09T18:37:36+00:00] INFO: Processing directory[/var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/data_bags/aws_opsworks_user] action create (/var/lib/aws/opsworks/cache.internal/cookbooks/aws_opsworks_custom_run/providers/default.rb line 120)
+[2016-01-09T18:37:36+00:00] INFO: directory[/var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/data_bags/aws_opsworks_user] created directory /var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/data_bags/aws_opsworks_user
+[2016-01-09T18:37:36+00:00] INFO: Processing directory[/var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/data_bags/aws_opsworks_elastic_load_balancer] action create (/var/lib/aws/opsworks/cache.internal/cookbooks/aws_opsworks_custom_run/providers/default.rb line 120)
+[2016-01-09T18:37:36+00:00] INFO: directory[/var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/data_bags/aws_opsworks_elastic_load_balancer] created directory /var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/data_bags/aws_opsworks_elastic_load_balancer
+[2016-01-09T18:37:36+00:00] INFO: Processing directory[/var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/data_bags/aws_opsworks_rds_db_instance] action create (/var/lib/aws/opsworks/cache.internal/cookbooks/aws_opsworks_custom_run/providers/default.rb line 120)
+[2016-01-09T18:37:36+00:00] INFO: directory[/var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/data_bags/aws_opsworks_rds_db_instance] created directory /var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/data_bags/aws_opsworks_rds_db_instance
+[2016-01-09T18:37:36+00:00] INFO: Processing directory[/var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/data_bags/aws_opsworks_ecs_cluster] action create (/var/lib/aws/opsworks/cache.internal/cookbooks/aws_opsworks_custom_run/providers/default.rb line 120)
+[2016-01-09T18:37:36+00:00] INFO: directory[/var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/data_bags/aws_opsworks_ecs_cluster] created directory /var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/data_bags/aws_opsworks_ecs_cluster
+[2016-01-09T18:37:36+00:00] INFO: Processing directory[/var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/data_bags/aws_opsworks_command] action create (/var/lib/aws/opsworks/cache.internal/cookbooks/aws_opsworks_custom_run/providers/default.rb line 200)
+[2016-01-09T18:37:36+00:00] INFO: directory[/var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/data_bags/aws_opsworks_command] created directory /var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/data_bags/aws_opsworks_command
+[2016-01-09T18:37:36+00:00] INFO: Processing file[/var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/data_bags/aws_opsworks_command/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7.json] action create (/var/lib/aws/opsworks/cache.internal/cookbooks/aws_opsworks_custom_run/providers/default.rb line 207)
+[2016-01-09T18:37:36+00:00] INFO: file[/var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/data_bags/aws_opsworks_command/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7.json] created file /var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/data_bags/aws_opsworks_command/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7.json
+[2016-01-09T18:37:36+00:00] INFO: file[/var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/data_bags/aws_opsworks_command/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7.json] updated file contents /var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/data_bags/aws_opsworks_command/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7.json
+[2016-01-09T18:37:36+00:00] INFO: Processing file[/var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/nodes/grokitlayer1.localdomain.json] action create (/var/lib/aws/opsworks/cache.internal/cookbooks/aws_opsworks_custom_run/providers/default.rb line 174)
+[2016-01-09T18:37:36+00:00] INFO: file[/var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/nodes/grokitlayer1.localdomain.json] created file /var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/nodes/grokitlayer1.localdomain.json
+[2016-01-09T18:37:36+00:00] INFO: file[/var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/nodes/grokitlayer1.localdomain.json] updated file contents /var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/nodes/grokitlayer1.localdomain.json
+[2016-01-09T18:37:36+00:00] WARN: Skipping final node save because override_runlist was given
+[2016-01-09T18:37:36+00:00] INFO: Chef Run complete in 0.520448915 seconds
+[2016-01-09T18:37:36+00:00] INFO: Skipping removal of unused files from the cache
+[2016-01-09T18:37:36+00:00] INFO: Running report handlers
+[2016-01-09T18:37:36+00:00] INFO: Report handlers complete
+
+[2016-01-09T18:37:37+00:00] INFO: Started chef-zero at chefzero://localhost:8889 with repository at /var/chef
+  One version per cookbook
+  data_bags at /var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/data_bags
+  nodes at /var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/nodes
+
+[2016-01-09T18:37:37+00:00] INFO: Forking chef instance to converge...
+[2016-01-09T18:37:37+00:00] INFO: *** Chef 12.5.1 ***
+[2016-01-09T18:37:37+00:00] INFO: Chef-client pid: 7795
+[2016-01-09T18:37:38+00:00] INFO: Setting the run_list to ["recipe[grokit::default]", "recipe[grokit::install_package]", "recipe[grokit::add_user]", "recipe[grokit::create_directory]", "recipe[grokit::create_files]", "recipe[grokit::manage_service]", "recipe[grokit::run_script]", "recipe[grokit::data_bags]", "recipe[grokit::iteration_demo]", "recipe[grokit::conditional_logic]", "recipe[grokit::dependencies_demo]"] from CLI options
+[2016-01-09T18:37:38+00:00] INFO: Run List is [recipe[grokit::default], recipe[grokit::install_package], recipe[grokit::add_user], recipe[grokit::create_directory], recipe[grokit::create_files], recipe[grokit::manage_service], recipe[grokit::run_script], recipe[grokit::data_bags], recipe[grokit::iteration_demo], recipe[grokit::conditional_logic], recipe[grokit::dependencies_demo]]
+[2016-01-09T18:37:38+00:00] INFO: Run List expands to [grokit::default, grokit::install_package, grokit::add_user, grokit::create_directory, grokit::create_files, grokit::manage_service, grokit::run_script, grokit::data_bags, grokit::iteration_demo, grokit::conditional_logic, grokit::dependencies_demo]
+[2016-01-09T18:37:38+00:00] INFO: Starting Chef Run for grokitlayer1
+[2016-01-09T18:37:38+00:00] INFO: Running start handlers
+[2016-01-09T18:37:38+00:00] INFO: Start handlers complete.
+[2016-01-09T18:37:38+00:00] INFO: HTTP Request Returned 404 Not Found: Object not found: 
+[2016-01-09T18:37:38+00:00] INFO: Loading cookbooks [grokit@0.1.0, application@5.0.0, poise@2.5.0, poise-service@1.1.0]
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/grokit/recipes/install_package.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/grokit/recipes/default.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/grokit/recipes/conditional_logic.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/grokit/recipes/run_command.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/grokit/recipes/custom_json.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/grokit/recipes/create_directory.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/grokit/recipes/create_files.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/grokit/recipes/add_user.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/grokit/recipes/dependencies_demo.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/grokit/recipes/iteration_demo.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/grokit/recipes/run_script.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/grokit/recipes/data_bags.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/grokit/recipes/manage_service.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/grokit/files/hello.txt in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/grokit/README.md in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/grokit/metadata.json in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/grokit/chefignore in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/application/libraries/default.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/application/files/halite_gem/poise_application/app_mixin.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/application/files/halite_gem/poise_application/resources.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/application/files/halite_gem/poise_application/resources/application.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/application/files/halite_gem/poise_application/utils.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/application/files/halite_gem/poise_application/cheftie.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/application/files/halite_gem/poise_application/service_mixin.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/application/README.md in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/application/metadata.json in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise/libraries/default.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/helpers/include_recipe.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/helpers/subresources/container.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/application/files/halite_gem/poise_application.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/helpers/subresources/default_containers.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/application/files/halite_gem/poise_application/error.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/helpers/subresources.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/application/files/halite_gem/poise_application/version.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/helpers/chefspec_matchers.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/helpers/defined_in.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/helpers/resource_name.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/helpers/option_collector.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/application/CHANGELOG.md in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/helpers/notifying_block.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/helpers/resource_subclass.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/helpers/lazy_default.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/helpers/fused.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/helpers/subresources/child.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/helpers/inversion/options_provider.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/helpers/template_content.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/helpers/lwrp_polyfill.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/helpers/subcontext_block.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/helpers/inversion.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/version.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/utils/shell_out.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/utils/resource_provider_mixin.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/utils.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/error.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/subcontext/runner.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/subcontext/resource_collection.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/resource.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/helpers/inversion/options_resource.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/provider.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/subcontext.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/helpers.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/backports/not_passed.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/helpers/resource_cloning.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/backports.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise/README.md in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise/metadata.json in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise-service/libraries/default.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise-service/attributes/default.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise-service/files/halite_gem/poise_service/resources.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise-service/files/halite_gem/poise_service/resources/poise_service_user.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise-service/files/halite_gem/poise_service/resources/poise_service_test.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise-service/files/halite_gem/poise_service/resources/poise_service.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise-service/files/halite_gem/poise_service/version.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise-service/files/halite_gem/poise_service/service_providers/upstart.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise-service/files/halite_gem/poise_service/service_providers/inittab.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise-service/files/halite_gem/poise_service/service_providers/sysvinit.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise-service/files/halite_gem/poise_service/service_providers/base.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise-service/files/halite_gem/poise_service/service_providers/systemd.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise-service/files/halite_gem/poise_service/utils.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise-service/files/halite_gem/poise_service/cheftie.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise/CHANGELOG.md in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise-service/files/halite_gem/poise_service/error.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise-service/files/halite_gem/poise_service/service_providers.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise-service/files/halite_gem/poise_service/service_providers/dummy.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise-service/files/halite_gem/poise_service/service_mixin.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise-service/files/halite_gem/poise_service.rb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise-service/templates/default/upstart.conf.erb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise-service/templates/default/sysvinit.sh.erb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise-service/templates/default/dummy.json.erb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise-service/templates/default/inittab.sh.erb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise-service/README.md in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise-service/metadata.json in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise-service/CHANGELOG.md in the cache.
+[2016-01-09T18:37:38+00:00] INFO: Storing updated cookbooks/poise-service/templates/default/systemd.service.erb in the cache.
+[2016-01-09T18:37:38+00:00] INFO: ********** Hello owen0937 **********
+[2016-01-09T18:37:38+00:00] INFO: ********** This instance's instance ID is 'cf478b78-e3b6-4fce-a595-9cf56a6931e4' **********
+[2016-01-09T18:37:38+00:00] INFO: ********** This instance's public IP address is '52.34.150.99' **********
+[2016-01-09T18:37:38+00:00] INFO: ********** This instance belongs to the layer 'GrokitLayer' **********
+[2016-01-09T18:37:38+00:00] INFO: ********** This instance belongs to the stack 'Grokit' **********
+[2016-01-09T18:37:38+00:00] INFO: ********** This stack gets its cookbooks from 'https://s3-us-west-2.amazonaws.com/grokit/grokit.tar.gz' **********
+[2016-01-09T18:37:38+00:00] INFO: ********** Content of 'custom_cookbooks_source' **********
+[2016-01-09T18:37:38+00:00] INFO: ********** '["type", "s3"]' **********
+[2016-01-09T18:37:38+00:00] INFO: ********** '["url", "https://s3-us-west-2.amazonaws.com/grokit/grokit.tar.gz"]' **********
+[2016-01-09T18:37:38+00:00] INFO: ********** '["username", nil]' **********
+[2016-01-09T18:37:38+00:00] INFO: ********** '["password", nil]' **********
+[2016-01-09T18:37:38+00:00] INFO: ********** '["ssh_key", nil]' **********
+[2016-01-09T18:37:38+00:00] INFO: ********** '["revision", nil]' **********
+[2016-01-09T18:37:38+00:00] INFO: ********** Operating system is Amazon Linux. **********
+[2016-01-09T18:37:38+00:00] INFO: Processing yum_package[Install Emacs] action install (grokit::install_package line 1)
+[2016-01-09T18:37:39+00:00] INFO: Processing user[Add a user] action create (grokit::add_user line 1)
+[2016-01-09T18:37:39+00:00] INFO: Processing directory[Create a directory] action create (grokit::create_directory line 1)
+[2016-01-09T18:37:39+00:00] INFO: Processing file[Create a file] action create (grokit::create_files line 1)
+[2016-01-09T18:37:39+00:00] INFO: Processing cookbook_file[Copy a file] action create (grokit::create_files line 9)
+[2016-01-09T18:37:39+00:00] INFO: Processing service[Manage a service] action stop (grokit::manage_service line 1)
+[2016-01-09T18:37:39+00:00] INFO: Processing script[Run a script] action run (grokit::run_script line 1)
+[2016-01-09T18:37:39+00:00] INFO: script[Run a script] ran successfully
+[2016-01-09T18:37:39+00:00] INFO: Processing yum_package[Install a package with yum] action install (grokit::conditional_logic line 22)
+[2016-01-09T18:37:39+00:00] INFO: yum_package[Install a package with yum] installing tree-1.6.0-5.8.amzn1 from amzn-main repository
+[2016-01-09T18:37:40+00:00] INFO: yum_package[Install a package with yum] installed tree at 1.6.0-5.8.amzn1
+[2016-01-09T18:37:40+00:00] INFO: Processing ruby_block[subresource_order_fixer] action run (dynamically defined)
+[2016-01-09T18:37:40+00:00] INFO: ruby_block[subresource_order_fixer] called
+[2016-01-09T18:37:40+00:00] INFO: Processing application[Install NetHack] action deploy (grokit::dependencies_demo line 1)
+[2016-01-09T18:37:40+00:00] INFO: Processing directory[Install NetHack] action create (/var/chef/runs/498010b5-5a44-4cd1-a4a8-a71c61ecc2a7/local-mode-cache/cache/cookbooks/application/files/halite_gem/poise_application/resources/application.rb line 203)
+[2016-01-09T18:37:40+00:00] INFO: directory[Install NetHack] created directory Install NetHack
+[2016-01-09T18:37:40+00:00] INFO: directory[Install NetHack] mode changed to 755
+[2016-01-09T18:37:40+00:00] INFO: Processing yum_package[nethack.x86_64] action install (grokit::dependencies_demo line 2)
+[2016-01-09T18:37:40+00:00] INFO: yum_package[nethack.x86_64] installing nethack-3.4.3-32.4.amzn1.x86_64 from amzn-main repository
+[2016-01-09T18:37:41+00:00] INFO: yum_package[nethack.x86_64] installed nethack at 3.4.3-32.4.amzn1
+[2016-01-09T18:37:41+00:00] INFO: yum_package[nethack.x86_64] sending restart action to application[Install NetHack] (delayed)
+[2016-01-09T18:37:41+00:00] INFO: Processing application[Install NetHack] action restart (grokit::dependencies_demo line 1)
+[2016-01-09T18:37:41+00:00] INFO: HTTP Request Returned 404 Not Found: Object not found: chefzero://localhost:8889/nodes/grokitlayer1
+[2016-01-09T18:37:41+00:00] INFO: Chef Run complete in 2.640544892 seconds
+[2016-01-09T18:37:41+00:00] INFO: Running report handlers
+[2016-01-09T18:37:41+00:00] INFO: Report handlers complete

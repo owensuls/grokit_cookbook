@@ -1,0 +1,142 @@
+[2016-01-09T18:16:12+00:00] INFO: AWS OpsWorks instance , Agent version 4005-20151217192343
+[2016-01-09T18:16:13+00:00] INFO: Started chef-zero at chefzero://localhost:8889 with repository at /opt/aws/opsworks/current
+  One version per cookbook
+  data_bags at /var/lib/aws/opsworks/data.internal/data_bags
+  nodes at /var/lib/aws/opsworks/data.internal/nodes
+
+[2016-01-09T18:16:13+00:00] INFO: Forking chef instance to converge...
+[2016-01-09T18:16:13+00:00] INFO: *** Chef 12.4.1 ***
+[2016-01-09T18:16:13+00:00] INFO: Chef-client pid: 6543
+[2016-01-09T18:16:14+00:00] WARN: Run List override has been provided.
+[2016-01-09T18:16:14+00:00] WARN: Original Run List: []
+[2016-01-09T18:16:14+00:00] WARN: Overridden Run List: [recipe[aws_opsworks_agent]]
+[2016-01-09T18:16:14+00:00] INFO: Run List is [recipe[aws_opsworks_agent]]
+[2016-01-09T18:16:14+00:00] INFO: Run List expands to [aws_opsworks_agent]
+[2016-01-09T18:16:14+00:00] INFO: Starting Chef Run for grokitlayer1.localdomain
+[2016-01-09T18:16:14+00:00] INFO: Running start handlers
+[2016-01-09T18:16:14+00:00] INFO: Start handlers complete.
+[2016-01-09T18:16:14+00:00] INFO: HTTP Request Returned 404 Not Found: Object not found: 
+[2016-01-09T18:16:14+00:00] INFO: Loading cookbooks [aws_opsworks_agent@0.1.0, aws_opsworks_helpers@0.1.0, aws_opsworks_agent_version@1.0.0, aws_opsworks_ebs@2.0.0, aws_opsworks_users@1.0.0, aws_opsworks_system@0.1.0, aws_opsworks_custom_cookbooks@1.0.0, aws_opsworks_custom_run@0.1.0, aws_opsworks_ecs@1.0.0, s3_file@2.5.4]
+[2016-01-09T18:16:14+00:00] INFO: Skipping removal of obsoleted cookbooks from the cache
+[2016-01-09T18:16:14+00:00] INFO: Cleaning up 2 from /var/lib/aws/opsworks/chef/
+[2016-01-09T18:16:14+00:00] INFO: Processing template[/etc/hosts] action create (aws_opsworks_system::hosts line 1)
+[2016-01-09T18:16:14+00:00] INFO: Processing template[/etc/motd.opsworks-static] action create (aws_opsworks_system::motd line 1)
+[2016-01-09T18:16:14+00:00] INFO: Processing file[/var/lib/aws/opsworks/chef/2016-01-08-17-32-57-01.json] action delete (aws_opsworks_system::cleanup line 24)
+[2016-01-09T18:16:14+00:00] INFO: file[/var/lib/aws/opsworks/chef/2016-01-08-17-32-57-01.json] deleted file at /var/lib/aws/opsworks/chef/2016-01-08-17-32-57-01.json
+[2016-01-09T18:16:14+00:00] INFO: Processing file[/var/lib/aws/opsworks/chef/2016-01-08-17-32-57-01.log] action delete (aws_opsworks_system::cleanup line 24)
+[2016-01-09T18:16:14+00:00] INFO: file[/var/lib/aws/opsworks/chef/2016-01-08-17-32-57-01.log] deleted file at /var/lib/aws/opsworks/chef/2016-01-08-17-32-57-01.log
+[2016-01-09T18:16:14+00:00] INFO: Processing log[Cleaning up 1 from /var/chef/runs/] action write (aws_opsworks_system::cleanup line 35)
+[2016-01-09T18:16:14+00:00] INFO: Cleaning up 1 from /var/chef/runs/
+[2016-01-09T18:16:14+00:00] INFO: Processing directory[/var/chef/runs/ff502e88-9aea-4a75-a100-47280bb41916] action delete (aws_opsworks_system::cleanup line 38)
+[2016-01-09T18:16:14+00:00] INFO: directory[/var/chef/runs/ff502e88-9aea-4a75-a100-47280bb41916] deleted /var/chef/runs/ff502e88-9aea-4a75-a100-47280bb41916 recursively
+[2016-01-09T18:16:14+00:00] INFO: Processing aws_opsworks_custom_run[0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6] action prepare (aws_opsworks_custom_run::default line 3)
+[2016-01-09T18:16:14+00:00] INFO: Processing directory[/var/chef] action create (/var/lib/aws/opsworks/cache.internal/cookbooks/aws_opsworks_custom_run/providers/default.rb line 71)
+[2016-01-09T18:16:14+00:00] INFO: Processing directory[/var/chef/runs] action create (/var/lib/aws/opsworks/cache.internal/cookbooks/aws_opsworks_custom_run/providers/default.rb line 78)
+[2016-01-09T18:16:14+00:00] INFO: Processing directory[/var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6] action create (/var/lib/aws/opsworks/cache.internal/cookbooks/aws_opsworks_custom_run/providers/default.rb line 83)
+[2016-01-09T18:16:14+00:00] INFO: directory[/var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6] created directory /var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6
+[2016-01-09T18:16:14+00:00] INFO: Processing directory[/var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/data_bags] action create (/var/lib/aws/opsworks/cache.internal/cookbooks/aws_opsworks_custom_run/providers/default.rb line 88)
+[2016-01-09T18:16:14+00:00] INFO: directory[/var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/data_bags] created directory /var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/data_bags
+[2016-01-09T18:16:14+00:00] INFO: Processing directory[/var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/nodes] action create (/var/lib/aws/opsworks/cache.internal/cookbooks/aws_opsworks_custom_run/providers/default.rb line 93)
+[2016-01-09T18:16:14+00:00] INFO: directory[/var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/nodes] created directory /var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/nodes
+[2016-01-09T18:16:14+00:00] INFO: Processing template[/var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/client.rb] action create (/var/lib/aws/opsworks/cache.internal/cookbooks/aws_opsworks_custom_run/providers/default.rb line 102)
+[2016-01-09T18:16:14+00:00] INFO: template[/var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/client.rb] created file /var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/client.rb
+[2016-01-09T18:16:14+00:00] INFO: template[/var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/client.rb] updated file contents /var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/client.rb
+[2016-01-09T18:16:14+00:00] INFO: Processing file[/var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/attribs.json] action create (/var/lib/aws/opsworks/cache.internal/cookbooks/aws_opsworks_custom_run/providers/default.rb line 110)
+[2016-01-09T18:16:14+00:00] INFO: file[/var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/attribs.json] created file /var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/attribs.json
+[2016-01-09T18:16:14+00:00] INFO: file[/var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/attribs.json] updated file contents /var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/attribs.json
+[2016-01-09T18:16:14+00:00] INFO: Processing directory[/var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/data_bags/aws_opsworks_app] action create (/var/lib/aws/opsworks/cache.internal/cookbooks/aws_opsworks_custom_run/providers/default.rb line 120)
+[2016-01-09T18:16:14+00:00] INFO: directory[/var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/data_bags/aws_opsworks_app] created directory /var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/data_bags/aws_opsworks_app
+[2016-01-09T18:16:14+00:00] INFO: Processing directory[/var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/data_bags/aws_opsworks_instance] action create (/var/lib/aws/opsworks/cache.internal/cookbooks/aws_opsworks_custom_run/providers/default.rb line 120)
+[2016-01-09T18:16:14+00:00] INFO: directory[/var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/data_bags/aws_opsworks_instance] created directory /var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/data_bags/aws_opsworks_instance
+[2016-01-09T18:16:14+00:00] INFO: Processing file[/var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/data_bags/aws_opsworks_instance/grokitlayer1.json] action create (/var/lib/aws/opsworks/cache.internal/cookbooks/aws_opsworks_custom_run/providers/default.rb line 219)
+[2016-01-09T18:16:14+00:00] INFO: file[/var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/data_bags/aws_opsworks_instance/grokitlayer1.json] created file /var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/data_bags/aws_opsworks_instance/grokitlayer1.json
+[2016-01-09T18:16:14+00:00] INFO: file[/var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/data_bags/aws_opsworks_instance/grokitlayer1.json] updated file contents /var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/data_bags/aws_opsworks_instance/grokitlayer1.json
+[2016-01-09T18:16:14+00:00] INFO: Processing directory[/var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/data_bags/aws_opsworks_layer] action create (/var/lib/aws/opsworks/cache.internal/cookbooks/aws_opsworks_custom_run/providers/default.rb line 120)
+[2016-01-09T18:16:14+00:00] INFO: directory[/var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/data_bags/aws_opsworks_layer] created directory /var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/data_bags/aws_opsworks_layer
+[2016-01-09T18:16:14+00:00] INFO: Processing file[/var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/data_bags/aws_opsworks_layer/grokitlayer.json] action create (/var/lib/aws/opsworks/cache.internal/cookbooks/aws_opsworks_custom_run/providers/default.rb line 219)
+[2016-01-09T18:16:14+00:00] INFO: file[/var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/data_bags/aws_opsworks_layer/grokitlayer.json] created file /var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/data_bags/aws_opsworks_layer/grokitlayer.json
+[2016-01-09T18:16:14+00:00] INFO: file[/var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/data_bags/aws_opsworks_layer/grokitlayer.json] updated file contents /var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/data_bags/aws_opsworks_layer/grokitlayer.json
+[2016-01-09T18:16:14+00:00] INFO: Processing directory[/var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/data_bags/aws_opsworks_stack] action create (/var/lib/aws/opsworks/cache.internal/cookbooks/aws_opsworks_custom_run/providers/default.rb line 120)
+[2016-01-09T18:16:14+00:00] INFO: directory[/var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/data_bags/aws_opsworks_stack] created directory /var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/data_bags/aws_opsworks_stack
+[2016-01-09T18:16:14+00:00] INFO: Processing file[/var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/data_bags/aws_opsworks_stack/54112b96-731f-4d54-9412-9604ef8c8f77.json] action create (/var/lib/aws/opsworks/cache.internal/cookbooks/aws_opsworks_custom_run/providers/default.rb line 219)
+[2016-01-09T18:16:14+00:00] INFO: file[/var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/data_bags/aws_opsworks_stack/54112b96-731f-4d54-9412-9604ef8c8f77.json] created file /var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/data_bags/aws_opsworks_stack/54112b96-731f-4d54-9412-9604ef8c8f77.json
+[2016-01-09T18:16:14+00:00] INFO: file[/var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/data_bags/aws_opsworks_stack/54112b96-731f-4d54-9412-9604ef8c8f77.json] updated file contents /var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/data_bags/aws_opsworks_stack/54112b96-731f-4d54-9412-9604ef8c8f77.json
+[2016-01-09T18:16:14+00:00] INFO: Processing directory[/var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/data_bags/aws_opsworks_user] action create (/var/lib/aws/opsworks/cache.internal/cookbooks/aws_opsworks_custom_run/providers/default.rb line 120)
+[2016-01-09T18:16:14+00:00] INFO: directory[/var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/data_bags/aws_opsworks_user] created directory /var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/data_bags/aws_opsworks_user
+[2016-01-09T18:16:14+00:00] INFO: Processing directory[/var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/data_bags/aws_opsworks_elastic_load_balancer] action create (/var/lib/aws/opsworks/cache.internal/cookbooks/aws_opsworks_custom_run/providers/default.rb line 120)
+[2016-01-09T18:16:14+00:00] INFO: directory[/var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/data_bags/aws_opsworks_elastic_load_balancer] created directory /var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/data_bags/aws_opsworks_elastic_load_balancer
+[2016-01-09T18:16:14+00:00] INFO: Processing directory[/var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/data_bags/aws_opsworks_rds_db_instance] action create (/var/lib/aws/opsworks/cache.internal/cookbooks/aws_opsworks_custom_run/providers/default.rb line 120)
+[2016-01-09T18:16:14+00:00] INFO: directory[/var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/data_bags/aws_opsworks_rds_db_instance] created directory /var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/data_bags/aws_opsworks_rds_db_instance
+[2016-01-09T18:16:14+00:00] INFO: Processing directory[/var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/data_bags/aws_opsworks_ecs_cluster] action create (/var/lib/aws/opsworks/cache.internal/cookbooks/aws_opsworks_custom_run/providers/default.rb line 120)
+[2016-01-09T18:16:14+00:00] INFO: directory[/var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/data_bags/aws_opsworks_ecs_cluster] created directory /var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/data_bags/aws_opsworks_ecs_cluster
+[2016-01-09T18:16:14+00:00] INFO: Processing directory[/var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/data_bags/aws_opsworks_command] action create (/var/lib/aws/opsworks/cache.internal/cookbooks/aws_opsworks_custom_run/providers/default.rb line 200)
+[2016-01-09T18:16:14+00:00] INFO: directory[/var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/data_bags/aws_opsworks_command] created directory /var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/data_bags/aws_opsworks_command
+[2016-01-09T18:16:14+00:00] INFO: Processing file[/var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/data_bags/aws_opsworks_command/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6.json] action create (/var/lib/aws/opsworks/cache.internal/cookbooks/aws_opsworks_custom_run/providers/default.rb line 207)
+[2016-01-09T18:16:14+00:00] INFO: file[/var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/data_bags/aws_opsworks_command/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6.json] created file /var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/data_bags/aws_opsworks_command/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6.json
+[2016-01-09T18:16:14+00:00] INFO: file[/var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/data_bags/aws_opsworks_command/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6.json] updated file contents /var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/data_bags/aws_opsworks_command/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6.json
+[2016-01-09T18:16:14+00:00] INFO: Processing file[/var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/nodes/grokitlayer1.localdomain.json] action create (/var/lib/aws/opsworks/cache.internal/cookbooks/aws_opsworks_custom_run/providers/default.rb line 174)
+[2016-01-09T18:16:14+00:00] INFO: file[/var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/nodes/grokitlayer1.localdomain.json] created file /var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/nodes/grokitlayer1.localdomain.json
+[2016-01-09T18:16:14+00:00] INFO: file[/var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/nodes/grokitlayer1.localdomain.json] updated file contents /var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/nodes/grokitlayer1.localdomain.json
+[2016-01-09T18:16:14+00:00] WARN: Skipping final node save because override_runlist was given
+[2016-01-09T18:16:14+00:00] INFO: Chef Run complete in 0.500400839 seconds
+[2016-01-09T18:16:14+00:00] INFO: Skipping removal of unused files from the cache
+[2016-01-09T18:16:14+00:00] INFO: Running report handlers
+[2016-01-09T18:16:14+00:00] INFO: Report handlers complete
+
+[2016-01-09T18:16:15+00:00] INFO: Started chef-zero at chefzero://localhost:8889 with repository at /var/chef
+  One version per cookbook
+  data_bags at /var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/data_bags
+  nodes at /var/chef/runs/0cb6a2b5-38c0-408d-95d4-c6e8e49b3dc6/nodes
+
+[2016-01-09T18:16:15+00:00] INFO: Forking chef instance to converge...
+[2016-01-09T18:16:15+00:00] INFO: *** Chef 12.5.1 ***
+[2016-01-09T18:16:15+00:00] INFO: Chef-client pid: 6727
+[2016-01-09T18:16:16+00:00] INFO: Setting the run_list to ["recipe[grokit::default]", "recipe[grokit::install_package]", "recipe[grokit::add_user]", "recipe[grokit::create_directory]", "recipe[grokit::create_files]", "recipe[grokit::manage_service]", "recipe[grokit::run_script]", "recipe[grokit::data_bags]", "recipe[grokit::iteration_demo]"] from CLI options
+[2016-01-09T18:16:16+00:00] INFO: Run List is [recipe[grokit::default], recipe[grokit::install_package], recipe[grokit::add_user], recipe[grokit::create_directory], recipe[grokit::create_files], recipe[grokit::manage_service], recipe[grokit::run_script], recipe[grokit::data_bags], recipe[grokit::iteration_demo]]
+[2016-01-09T18:16:16+00:00] INFO: Run List expands to [grokit::default, grokit::install_package, grokit::add_user, grokit::create_directory, grokit::create_files, grokit::manage_service, grokit::run_script, grokit::data_bags, grokit::iteration_demo]
+[2016-01-09T18:16:16+00:00] INFO: Starting Chef Run for grokitlayer1
+[2016-01-09T18:16:16+00:00] INFO: Running start handlers
+[2016-01-09T18:16:16+00:00] INFO: Start handlers complete.
+[2016-01-09T18:16:16+00:00] INFO: HTTP Request Returned 404 Not Found: Object not found: 
+[2016-01-09T18:16:16+00:00] INFO: Loading cookbooks [grokit@0.1.0]
+[2016-01-09T18:16:16+00:00] INFO: Storing updated cookbooks/grokit/recipes/default.rb in the cache.
+[2016-01-09T18:16:16+00:00] INFO: Storing updated cookbooks/grokit/recipes/run_command.rb in the cache.
+[2016-01-09T18:16:16+00:00] INFO: Storing updated cookbooks/grokit/recipes/custom_json.rb in the cache.
+[2016-01-09T18:16:16+00:00] INFO: Storing updated cookbooks/grokit/recipes/create_files.rb in the cache.
+[2016-01-09T18:16:16+00:00] INFO: Storing updated cookbooks/grokit/recipes/iteration_demo.rb in the cache.
+[2016-01-09T18:16:16+00:00] INFO: Storing updated cookbooks/grokit/recipes/run_script.rb in the cache.
+[2016-01-09T18:16:16+00:00] INFO: Storing updated cookbooks/grokit/recipes/data_bags.rb in the cache.
+[2016-01-09T18:16:16+00:00] INFO: Storing updated cookbooks/grokit/files/hello.txt in the cache.
+[2016-01-09T18:16:16+00:00] INFO: Storing updated cookbooks/grokit/README.md in the cache.
+[2016-01-09T18:16:16+00:00] INFO: Storing updated cookbooks/grokit/metadata.json in the cache.
+[2016-01-09T18:16:16+00:00] INFO: Storing updated cookbooks/grokit/recipes/install_package.rb in the cache.
+[2016-01-09T18:16:16+00:00] INFO: Storing updated cookbooks/grokit/recipes/create_directory.rb in the cache.
+[2016-01-09T18:16:16+00:00] INFO: Storing updated cookbooks/grokit/recipes/add_user.rb in the cache.
+[2016-01-09T18:16:16+00:00] INFO: Storing updated cookbooks/grokit/recipes/manage_service.rb in the cache.
+[2016-01-09T18:16:16+00:00] INFO: Storing updated cookbooks/grokit/chefignore in the cache.
+[2016-01-09T18:16:16+00:00] INFO: ********** Hello owen0937 **********
+[2016-01-09T18:16:16+00:00] INFO: ********** This instance's instance ID is 'cf478b78-e3b6-4fce-a595-9cf56a6931e4' **********
+[2016-01-09T18:16:16+00:00] INFO: ********** This instance's public IP address is '52.34.150.99' **********
+[2016-01-09T18:16:16+00:00] INFO: ********** This instance belongs to the layer 'GrokitLayer' **********
+[2016-01-09T18:16:16+00:00] INFO: ********** This instance belongs to the stack 'Grokit' **********
+[2016-01-09T18:16:16+00:00] INFO: ********** This stack gets its cookbooks from 'https://s3-us-west-2.amazonaws.com/grokit/grokit.tar.gz' **********
+[2016-01-09T18:16:16+00:00] INFO: ********** Content of 'custom_cookbooks_source' **********
+[2016-01-09T18:16:16+00:00] INFO: ********** '["type", "s3"]' **********
+[2016-01-09T18:16:16+00:00] INFO: ********** '["url", "https://s3-us-west-2.amazonaws.com/grokit/grokit.tar.gz"]' **********
+[2016-01-09T18:16:16+00:00] INFO: ********** '["username", nil]' **********
+[2016-01-09T18:16:16+00:00] INFO: ********** '["password", nil]' **********
+[2016-01-09T18:16:16+00:00] INFO: ********** '["ssh_key", nil]' **********
+[2016-01-09T18:16:16+00:00] INFO: ********** '["revision", nil]' **********
+[2016-01-09T18:16:16+00:00] INFO: Processing yum_package[Install Emacs] action install (grokit::install_package line 1)
+[2016-01-09T18:16:17+00:00] INFO: Processing user[Add a user] action create (grokit::add_user line 1)
+[2016-01-09T18:16:17+00:00] INFO: Processing directory[Create a directory] action create (grokit::create_directory line 1)
+[2016-01-09T18:16:17+00:00] INFO: Processing file[Create a file] action create (grokit::create_files line 1)
+[2016-01-09T18:16:17+00:00] INFO: Processing cookbook_file[Copy a file] action create (grokit::create_files line 9)
+[2016-01-09T18:16:17+00:00] INFO: Processing service[Manage a service] action stop (grokit::manage_service line 1)
+[2016-01-09T18:16:17+00:00] INFO: service[Manage a service] stopped
+[2016-01-09T18:16:17+00:00] INFO: Processing script[Run a script] action run (grokit::run_script line 1)
+[2016-01-09T18:16:17+00:00] INFO: script[Run a script] ran successfully
+[2016-01-09T18:16:17+00:00] INFO: HTTP Request Returned 404 Not Found: Object not found: chefzero://localhost:8889/nodes/grokitlayer1
+[2016-01-09T18:16:17+00:00] INFO: Chef Run complete in 0.995464468 seconds
+[2016-01-09T18:16:17+00:00] INFO: Running report handlers
+[2016-01-09T18:16:17+00:00] INFO: Report handlers complete
